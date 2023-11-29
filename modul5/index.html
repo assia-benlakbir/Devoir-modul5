@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 3 Solution</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include your custom CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs" href="#">Food, LLC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <!-- Mobile Menu -->
+                <ul class="nav navbar-nav visible-xs">
+                    <li><a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}}">Chicken</a></li>
+                    <li><a href="#"onclick="$dc.loadMenuItems({{randomCategoryShortName}}">Beef</a></li>
+                    <li><a href="#"onclick="$dc.loadMenuItems({{randomCategoryShortName}}">Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="text-center">
+        <h1>Our Menu</h1>
+    </div>
+	<style>
+body {
+    margin: 0;
+    font-family: 'Your Chosen Font', sans-serif; /* Optional: Set a custom font */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 150%; /* 75% larger than the dummy text */
+    margin: 20px;
+	text-align:center;
+}
+
+.section {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    margin: 10px;
+    overflow: hidden; /* Clear float */
+    background-color: gray; /* Set your chosen background color */
+    position: relative; /* Enable absolute positioning for child elements */
+	
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: PINK; /* Unique color for section title region */
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    color: black; /* Adjust text color for visibility */
+    font-size: 95%; /* 25% larger than the dummy text */
+}
+
+@media (min-width: 768px) {
+    .section {
+        width: 48%; /* 2 sections side by side */
+    }
+
+    .section:nth-child(3) {
+        clear: both; /* Move the third section below the first two */
+		
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 30%; /* 3 sections side by side */
+		
+    }
+}
+</style>
+  
+
+    <section class="section">
+        <div class="section-title">Chicken</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim </p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Beef</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Sushi</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="container-fluid">
+        <div class="row">
+            <!-- Use col-xs-12 to take up the entire row -->
+            <div class="col-xs-12">
+                <!-- Your content goes here -->
+                <!-- Example: -->
+                <div style="height: 1000px; background-color: #f0f0f0;">
+                    <!-- Content goes here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

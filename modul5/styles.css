@@ -1,0 +1,9 @@
+.text-center {
+    text-align: center;
+}
+
+/* Style for the tall section */
+.tall-section {
+    height: 1000px;
+    background-color: #f0f0f0;
+}
